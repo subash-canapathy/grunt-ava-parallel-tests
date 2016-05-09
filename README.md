@@ -23,7 +23,7 @@ There are 2 test files and each of them have 4 tests in them. Three of the tests
 
 ![TestResultsWithTime](screenshots/testResultsWithTime.png)
 
-Note how much time the tests took in total, it will be approximately in the order of the slowest individual test int the suite. Even though we ran 2 separate combinations of the same suite (all tests) which is in total 16 individual test runs, we apparently ran the two combinations (tasks) concurrently, and then Ava ran the individual javascript files in their own process and the ava process for each file runs the individual tests in parallel ! #mindblowing
+From the above screenshot, note how much time the tests took in total, it will usually be approximately in the order of the slowest individual test in the suite. Even though we ran 2 separate combinations of the same suite (all tests) which is in total 16 individual test runs, we apparently ran the two combinations (tasks) concurrently, and then Ava ran the individual javascript files in their own process and the ava process for each file runs the individual tests in parallel ! 
 
 The demo tests will also have a basic context usage, where we are logging to console when
 * when we get a new driver (with nanotime based ID)
